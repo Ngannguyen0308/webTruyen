@@ -1,0 +1,17 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+.main_home{
+    margin-top: 40px;
+    /* box-shadow: rgba(2, 2, 2, 0.2) 0px 8px 24px; */
+
+}
+
+.regis_button{
+    background-color: rgb(76, 114, 4);
+    color: white;
+}
+.regis_button:hover{
+    background-color: rgb(5, 176, 25);
+    color: black;
+}

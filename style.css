@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100&display=swap');
+
+
+* {
+  font-family: 'Poppins', sans-serif;  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  /* width: 1496;
+  height: 626; */
+
+}
+
+
+/* ===============Home page========================== */
+.container-fluid .logo_header {
+  width: 300px;
+  margin-left: 210px;
+  margin-top: 30px;
+}
+.form_act .mb-3 {
+  margin-left: 38px;
+}
+.form_act {
+  align-items: center;
+  text-align: center;
+  margin-left: 120px;
+}
+/* ===============Sidebar========================== */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* display: none; */
+  height: 100%;
+  width: 250px;
+  background-color: #282828f2;
+  border-right: 1px solid rgba(0, 0, 0, 0.584);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
+  transition: 0.1s;
+}
+/* sidebar close */
+.sidebar.close {
+  width: 0px;
+}
+.sidebar.close .header_sidebar {
+  opacity: 0;
+}
+.sidebar.close .menu-bar {
+  opacity: 0;
+}
+.sidebar .image-text img {
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.sidebar header {
+  display: flex;
+  position: relative;
+}
+.sidebar .header-text {
+  margin-top: 40px;
+  font-size: 25px;
+  color: whitesmoke;
+  margin-left: 10px;
+  font-weight: 600;
+  text-shadow: #eee;
+  font-family: "Pacifico", cursive;
+}
+.sidebar .premium-button {
+  margin-left: 40px;
+  margin-top: 10px;
+  width: 160px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  background-color: #ffc600;
+  color: white;
+  font-size: 14px;
+}
+.sidebar .premium-button:hover {
+  color: black;
+}
+.sidebar li,
+.menu-links :hover {
+  color: #ffc600;
+}
+.sidebar li {
+  height: 40px;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  /* margin-right: -25px; */
+  margin-left: 20px;
+  font-size: 15px;
+}
+.sidebar li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.sidebar li a i {
+  font-size: 20px;
+}
+.sidebar li a span {
+  margin-left: 5px;
+}
+
+.menu-bar .menu .my-lists p {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: whitesmoke;
+}
+.menu-bar .menu .my-lists .fa-circle-plus {
+  margin-left: 80px;
+  font-size: 20px;
+}
+/* ==============navbar right============ */
+.wrapper {
+  position: absolute;
+  right: 60px;
+  margin-top: 10px;
+  width: 90wh;
+}
+.wrapper .fa-bell {
+  margin-top: 15px;
+  margin-right: 25px;
+}
+/* .input-group {
+  position: absolute;
+  right: 40px;
+  margin-top: 7px;
+} */
+.wrapper i {
+  right: 10px;
+  font-size: 20px;
+}
+.navbar-right .img_main {
+  width: 50px;
+
+}
+.navbar-right {
+  display: flex;
+}
+.navbar-right .icon_wrap {
+  cursor: pointer;
+}
+
+
+.profile_dd .profile_ul {
+  text-decoration: none;
+  list-style: none;
+  font-size: 17px;
+  margin-left: 20px;
+}
+.profile_dd .profile_ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  align-items: center;
+}
+.profile_dd .profile_ul .profile_title {
+  margin-top: 10px;
+  position: relative;
+  left: 30px;
+  top: 5px;
+}
+
+.profile_dd .profile_ul li a button {
+  margin-left: 30px;
+  align-items: center;
+  position: relative;
+  left: 10px;
+}
+.profile_dd .profile_ul li a:hover {
+  color: #d58916;
+}
+.wrapper .navbar-right .profile .profile_dd {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 15px;
+  border: 10px solid;
+  border-color: transparent transparent #fff transparent;
+}
+.wrapper .navbar-right .profile .profile_dd {
+  position: absolute;
+  top: 48px;
+  right: -15px;
+  user-select: none;
+  background: #fff;
+  border: 1px solid #c7d8e2;
+  width: 250px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.125),
+    -10px -10px 35px rgba(0, 0, 0, 0.125);
+}
+.profile_dd.show {
+  opacity: 0;
+  transform: translate(-20px);
+  transition: 0s ease;
+}
+/* ========change password================ */
+.changePass {
+  background-color: #f9f9f9;
+}
+.mainDiv {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  font-family: "Open Sans", sans-serif;
+}
+.cardStyle {
+  width: 700px;
+  border-color: white;
+  background: #fff;
+  padding: 36px 0;
+  border-radius: 4px;
+  margin: 30px 0;
+  box-shadow: 0px 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+.formTitle {
+  font-weight: 500;
+  margin-top: 20px;
+  color: #2f2d3b;
+  text-align: left;
+  margin-left: 20px;
+}
+/* .inputLabel {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 6px;
+  margin-top: 24px;
+} */
+.inputDiv_curPas {
+  display: flex;
+  margin: 20px 20px 20px 20px;
+  margin-left: 40px;
+}
+.inputDiv_curPas input {
+  width: 300px;
+  margin-left: 15px;
+}
+.inputDiv_curPas a {
+  margin-left: 15px;
+}
+.inputDiv_new {
+  display: flex;
+  margin: 20px 20px 20px 20px;
+  margin-left: 40px;
+}
+.inputDiv_new input {
+  width: 300px;
+  margin-left: 40px;
+}
+.inputDiv_confirm {
+  display: flex;
+  margin: 20px 20px 20px 20px;
+  margin-left: 40px;
+}
+.inputDiv_confirm input {
+  width: 300px;
+  margin-left: 10px;
+}
+input:disabled {
+  cursor: not-allowed;
+  border: solid 1px #eee;
+}
+.buttonWrapper button {
+  margin-top: 40px;
+  margin-left: 300px;
+  align-items: center;
+}
+.title_main a {
+  text-decoration: none;
+}
+.submitButton {
+  width: 70%;
+  height: 40px;
+  margin: auto;
+  display: block;
+  color: #fff;
+  background-color: #065492;
+  border-color: #065492;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.submitButton:disabled,
+button[disabled] {
+  border: 1px solid #cccccc;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+#loader {
+  position: absolute;
+  z-index: 1;
+  margin: -2px 0 0 10px;
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #666666;
+  width: 14px;
+  height: 14px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========dashboard============== */
+.dashboard {
+  /* max-width: 100wh; */
+  display: flex;
+  /* margin-top: 20px; */
+  height: 70px;
+  transition: 0.2s;
+  background-color: #1cb76c;
+
+} 
+.dashboard .notifications{
+  width: 450px;
+}
+.search_box .form-outline{
+  width: 250px;
+}
+.search_box .form-outline input{
+  margin-top: 4.5px;
+  height: 40px;
+}
+.search_box .form-outline button{
+  height: 40px;
+}
+
+/* .dashboard .wrapper .input-group .form-outline input{
+  height: 50px;
+} */
+.sidebar.close ~ .dashboard {
+  left: 20px;
+  width: calc(100% - 20px);
+}
+
+.dashboard .toggle {
+  margin-left: 256px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.dashboard .toggle_menu i {
+  display: flexbox;
+  transition: 0.4s ease-in-out;
+  margin-top: 20px;
+}
+.sidebar.close ~ .dashboard .toggle_menu i {
+  position: absolute;
+  margin-left: 20px;
+}
+/* ========tasklist======= */
+.welcome_user h4 {
+  display: flex;
+  margin-left: 50px;
+  position: sticky;
+  font-size: 25px;
+}
+.welcome_user {
+  height: fit-content;
+  margin-left: 50px;
+}
+.todo-list {
+  position: relative;
+  display: grid;
+  grid-area: active;
+  /* grid:
+    "header header header header" auto
+    ".......lists active...." auto /
+    1fr minmax(720px, 300px); */
+}
+
+.new-task-creator form {
+  display: flex;
+}
+.new-task-creator {
+    border: 1px solid black;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
+    width: 700px;
+    margin-top: 50px;
+    padding: 10px;
+    height: 70px;
+    box-shadow: 5px 5px 5px rgb(60, 93, 104);
+}
+.new-task-creator input {
+  border: none;
+  border-radius: 0;
+  width: 500px;
+  text-align: left;
+  outline: none;
+}
+.new-task-creator input:focus {
+  border-bottom-width: 3px;
+}
+.new-task-creator input:focus::placeholder {
+  opacity: 0.2;
+}
+
+.new-task-creator button {
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  transition: 250ms ease-in;
+}
+.new-task-creator button:hover {
+  color: #ffc600;
+}
+.todo-list .todo-body .tasks .task {
+  margin-top: 20px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px rgb(60, 93, 104);
+  padding: 20px;
+  align-items: left;
+  display: flex;
+  height: 70px;
+  cursor: pointer;
+}
+
+.todo-body {
+  position: absolute;
+  left: -200px;
+  top: 100px;
+  height: 600px;
+}
+
+
+.todo-list .todo-body .tasks .task input[type="radio"] {
+  font-size: 20px;
+  cursor: pointer;
+  height: 25px;
+  width: 20px;
+}
+
+.todo-list .todo-body .tasks .task label {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 3px;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  
+}
+/* ==========button-todo-tasklist=========== */
+.todo-list .todo-body .tasks .button-task{
+    display: flexbox;
+    position: absolute;
+    right: 20px;
+    margin-top: -55px;
+}
+/* ======taskLists page========= */
+.sec-tasklist .card-body{
+  font-size: 15px;
+  padding: 20px;
+}
+
+section .card-body .title-tasklist{
+  font-weight: 700;
+}
+section .card-body .title-tasklist .icon-subtasklist {
+  position: absolute;
+  right: 50px;
+}
+section .card-body .title-tasklist .icon-subtasklist a svg{
+  transition: border-botton 250m ease-in;
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black; 
+}
+section .card-body .title-tasklist .icon-subtasklist a svg:hover{
+  color: #FFC600;
+}
+
+section .card-body form .btn-remindWord a{
+  margin-right: 20px;
+  background-color: #FFC600;
+  color: black;
+  border: none;
+  transition: 250m ease-in;
+}
+section .card-body form .btn-remindWord a:hover{
+  color: whitesmoke;
+}
+
+section .card-body form .form-outline input{
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid black;
+}
+
+/* remindme Modal  */
+#remindmeModal .modal-content{
+  padding: 10px;
+}
+#remindmeModal .modal-content .modal-header{
+  height: 50px;
+}
+#remindmeModal .modal-content .modal-header button span{
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  transition: 250m ease-in;
+}
+#remindmeModal .modal-content .modal-body label {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#remindmeModal .modal-content .modal-body .picker{
+  margin-right: 50px;
+}
+
+#remindmeModal .modal-content .modal-body .picker input{
+  display: flex;
+  height: 53px;
+  width: 200px;
+  padding: 5px;
+  margin-top: -15px;
+  border-radius: 5px;
+  border: 1px solid rgba(96, 93, 93, 0.803);
+}
+#remindmeModal .modal-content .modal-body .picker #appt{
+  margin-top: -7px;
+}
+
+#remindmeModal .modal-content .modal-footer button{
+  background-color: #FFC600;
+  display: flex;
+  border: none;
+}
+/* MOVE TO MODAL */
+#movetoModal .modal-content .modal-header{
+  height: 50px;
+}
+#movetoModal .modal-content .modal-header h4{
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-weight: 700;
+
+}
+#movetoModal .modal-content .modal-header button span{
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  transition: 250m ease-in;
+}
+#movetoModal .modal-content .modal-body ul li{
+  list-style: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+#movetoModal .modal-content .modal-body ul li:hover{
+  color: #FFC600;
+}
+/* SHARE MODAL */
+
+#shareModal .modal-content .modal-header{
+  height: 50px;
+}
+#shareModal .modal-content .modal-header h4{
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-weight: 700;
+}
+#shareModal .modal-content .modal-header button span{
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  transition: 250m ease-in;
+}
+
+/* personal edit task list */
+
+#personalModal .modal-content .modal-header{
+  height: 50px;
+}
+
+#personalModal .modal-content .modal-header button span{
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  transition: 250m ease-in;
+}
+
+#personalModal .modal-content .modal-body .dropdown{
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+}
+#personalModal .modal-content .modal-body .dropdown button{
+  background-color: #FFC600;
+  transition: 250m ease-in;
+}
+
+#tasklistForm .form-check {
+  margin: 10px;
+  border: 1px solid rgb(170, 168, 168);
+  font-size: 15px;
+  height: 40px;
+  padding-top: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.main_taskList{
+  margin-top: 50px;
+  padding: 30px;
+  width: 600px;
+  font-size: 15px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  border: 1px solid rgba(0, 0, 0, 0.237);
+  box-shadow: rgba(2, 2, 2, 0.2) 0px 8px 24px;
+
+}
+.addTaskList button{
+  margin-top: 10px;
+  height: 30px;
+  font-size: 15px;
+}
+.addTaskList button:hover{
+  background-color: #FFC600;
+  color: black;
+}
+.fetchTaskList input{
+  height: 30px;
+  font-size: 15px;
+  background-color: #FFC600;
+}
+.fetchTaskList input:hover{
+  background-color: #1cb76c;
+}
+
+.subtask_content button{
+  font-size: 15px;
+}
+.subtask_content button:hover{
+  background-color: #1cb76c;
+}
+.tasks #tasks .form-check{
+  /* background-color: red; */
+  margin-top: 10px;
+}
+.myday_tasklist .form-group button{
+  font-size: 15px;
+}
+.tasks #tasks .form-check label{
+  width: 478.4px;
+  text-align: start;
+  color: rgba(0, 0, 0, 0.978);
+  font-size: 14px;
+  border: #2f2d3b75 1px solid;
+  background-color: #eee;
+}
+.tasks #tasks .form-check label:hover{
+  background-color: #FFC600;
+}
