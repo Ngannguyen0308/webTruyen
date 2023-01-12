@@ -63,14 +63,7 @@
           <ul class="menu-links">
             <!-- my day -->
             <li class="nav-link">
-              <a
-                href="#"
-                style="
-                  border-bottom: 1px solid whitesmoke;
-                  width: 180px;
-                  height: 30px;
-                "
-              >
+              <a href="#" style="color: #1cb76c;">
                 <i class="fa-solid fa-calendar-day"></i>
                 <span class="text nav-text">My day</span>
               </a>
@@ -88,32 +81,7 @@
                 <i class="fa-solid fa-list-check"></i>
                 <span class="text nav-text">All my tasks</span>
               </a>
-            </li>
-            <!-- MY LISTS -->
-            <div class="my-lists">
-              <p class="main-lists">
-                MY LISTS <i class="fa-solid fa-circle-plus"></i>
-              </p>
-            </div>
-            <!-- subtask -->
-            <li class="nav-link">
-              <a
-                href="#"
-                class=""
-                data-toggle="modal"
-                data-target="#personalModal"
-              >
-                <i class="fas fa-caret-right"></i>
-                <span class="text nav-text">Personal</span>
-              </a>
-            </li>
-            <!-- subtask -->
-            <li class="nav-link">
-              <a href="#">
-                <i class="fas fa-caret-right"></i>
-                <span class="text nav-text">Work</span>
-              </a>
-            </li>
+            </li>           
             <!-- MIKS.DO -->
             <div class="my-lists">
               <p class="main-lists">MIKS.DO</p>
@@ -146,7 +114,6 @@
           <i class="fa-solid fa-bars toggle"></i>
         </div>
       </div>
-
       <!-- navbar right -->
       <div class="wrapper">
         <div class="row-cols-lg-12 navbar-right">
@@ -243,6 +210,9 @@
         </div>
       </div>
     </section>
+    <!-- <div class="container" onload="getInfor()">
+      <h4>Xin chao <span id="show_username"></span></h4>
+    </div> -->
 
     <!-- MAIN  -->
     <div class="container tasklistBox">
@@ -274,14 +244,13 @@
             <div class="container">
               <!--    TASK LISTS   -->
               <div class="form-group fetchTaskList" style="margin-top: 30px">
-                <input
+                <button
                   id="DisplaytaskList"
                   class="btn btn-outline-dark"
                   type="button"
                   onclick="fetchTasklist()"
-                  value="Task Lists"
                   style="font-weight: bold; padding: 5px 10px 5px 10px"
-                />
+                >View Tasks</button>
               </div>
               <div class="form-group">
                 

@@ -8,7 +8,7 @@ const register = async () => {
     let lname = document.getElementById('lname').value;
 
     if (conPassword != password) {
-        alert("Your confirm password doesn't match password.");
+        alert("Your confirm password is not same as your password.");
     } else {
         const response = await fetch(`${serverUrl}/auth`, {
             method: 'POST',
