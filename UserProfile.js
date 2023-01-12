@@ -1,10 +1,10 @@
-let baseUrl = "http://dev.thanqminh.com:3000/";
+let baseUrl = "https://dev.thanqminh.com:3001/";
 var user = null;
 
 async function getInfor() {
   if (user == null) {
     try {
-      const savedLogin = await checkToken();
+      const savedLogin = await checkAccessToken();
       if (savedLogin) {
         document.getElementById("email").setAttribute("value", user.uid);
         document.getElementById("firstname").setAttribute("value", user.name);
